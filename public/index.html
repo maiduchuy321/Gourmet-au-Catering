@@ -9,11 +9,11 @@
 </head>
 <body class="font-body">
     <!-- navbar-->
-    <div class="bg-white fixed top-0 left-0 right-0 z-[2]">
+    <div class="bg-white fixed w-full top-0 z-[2] drop-shadow-lg">
         <div class="p-4 tracking-[4px] text-[15px] font-medium  ">
-            <a class="hover:bg-[#ccc]   px-4 py-2" href="#">Gourmet au Catering</a>
+            <a class="hover:bg-[#ccc] px-4 py-2" href="#">Gourmet au Catering</a>
             <!--Right navbar-->
-            <div class="text-center float-right hidden sm:inline">
+            <div class="text-center float-right  hidden sm:inline">
                 <a class="lg:hover:bg-[#ccc]  px-4 py-2"href="#About Section">About</a>
                 <a class="lg:hover:bg-[#ccc]  px-4 py-2"href="#Menu">Menu</a>
                 <a class="lg:hover:bg-[#ccc]  px-4 py-2"href="#Contact">Contact</a>
@@ -25,7 +25,7 @@
     <!--Header-->
     <header>
         <div class="relative mt-[54px]">
-            <img class="bg-auto" src="/assets/img/hamburger (1).jpg" alt="">
+            <img class="max-w-full h-auto min-w-[50%] sm:scale-100" src="/assets/img/hamburger (1).jpg" alt="">
             <div class="absolute px-6 py-3 bottom-0">
                 <h1 class=" tracking-widest  my-[10px] text-gray-500 text-[36px]">Le Catering</h1>
             </div>
@@ -37,8 +37,8 @@
     <div>
         <!-- About Section -->
         <div id= "About Section" class="py-16 grid sm:grid-cols-2 max-w-6xl mx-auto">
-            <div class="px-6 py-3">
-                <img class="rounded-lg opacity-[0.75] hidden sm:inline " src="/assets/img/tablesetting2.jpg" alt="">
+            <div class="px-6 py-3 ">
+                <img class="rounded-lg opacity-[0.75]  hidden sm:inline " src="/assets/img/tablesetting2.jpg" alt="">
             </div>
 
             <div class="px-6 py-3">
@@ -54,7 +54,7 @@
                     We only use <span class="bg-[#f1f1f1]" >seasonal</span> ingredients.
                 </p>
 
-                <p class="text-[18px] leading-[27px]  my-[18px] text-[#757575]">Excepteur sint occaecat cupidatat non proident, 
+                <p class="sm:hidden lg:inline text-[18px] leading-[27px]  my-[18px] text-[#757575]">Excepteur sint occaecat cupidatat non proident, 
                     sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
                     sed do eiusmod temporincididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -63,7 +63,7 @@
         </div>
         <hr class="my-5">
         <!-- Menu Section -->
-        <div id="Menu" class="grid sm:grid-cols-2 max-w-6xl mx-auto py-16">
+        <div id="Menu" class="lg:grid grid-cols-2 max-w-6xl mx-auto py-16">
             <div class="py-3 px-6">
                 <h1 class="text-[36px] tracking-[5px] leading-[54px] my-2.5 text-center">Our Menu</h1><br>
 
@@ -83,8 +83,8 @@
                 <p class="text-[#757575] text-[15px] leading-[22.5px] my-[15px]">With syrup, butter and lots of berries 8.50</p>     
             </div>
 
-            <div class="py-3 px-6">
-                <img class="rounded-lg inline opacity-[0.75] " src="/assets/img/tablesetting.jpg" alt="">
+            <div class="py-3 px-6 ">
+                <img class="block ml-auto mr-auto w-full  rounded-lg opacity-[0.75] " src="/assets/img/tablesetting.jpg" alt="">
             </div>
         </div>
 
@@ -97,17 +97,17 @@
             <p class="text-lg my-[18px] text-[#607d8b] font-bold"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
             <p class="my-[15px]">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
             <form action="" target="_blank">
-              <p><input class="py-4 px-2 border-b-2 border-[#ccc] my-2.5 outline-none" type="text" placeholder="Name" required name="Name"></p>
-              <p><input class="py-4 px-2  border-b-2 border-[#ccc] my-2.5" type="number" placeholder="How many people" required name="People"></p>
-              <p><input class="py-4 px-2 border-b-2 border-[#ccc] my-2.5" type="datetime-local" placeholder="Date and time" required name="date" value="2021-11-23T20:00"></p>
-              <p><input class="py-4 px-2 border-b-2 border-[#ccc] my-2.5" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-              <p><button class="py-3 
-                px-10 
-              text-white 
-              bg-[#6A5AF9] 
+              <p><input class="w-full py-4 px-2 border-b-2 border-[#ccc] my-2.5 outline-none" type="text" placeholder="Name" required name="Name"></p>
+              <p><input class="w-full py-4 px-2  border-b-2 border-[#ccc] my-2.5" type="number" placeholder="How many people" required name="People"></p>
+              <p><input class="w-full py-4 px-2 border-b-2 border-[#ccc] my-2.5" type="datetime-local" placeholder="Date and time" required name="date" value="2021-11-23T20:00"></p>
+              <p><input class="w-full py-4 px-2 border-b-2 border-[#ccc] my-2.5" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+              <p><button class="py-2
+                px-4
+              text-black
+              bg-[#cccccc] 
                 rounded-lg
                 transition-all
-                motion-safe:hover:scale-110" type="submit">SEND MESSAGE</button></p>
+                md:motion-safe:hover:scale-110" type="submit">SEND MESSAGE</button></p>
             </form>
           </div>
           
